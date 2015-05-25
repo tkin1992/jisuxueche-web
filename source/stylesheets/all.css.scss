@@ -1,0 +1,318 @@
+@import "font-awesome";
+
+@font-face {
+  font-family: 'BeonMedium';
+  src: url('../fonts/beon-webfont.eot');
+  src: local('☺'), url('../fonts/beon-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/beon-webfont.woff') format('woff'), url('../fonts/beon-webfont.ttf') format('truetype'), url('../fonts/beon-webfont.svg#BeonMedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latobold';
+  src: url('../fonts/Lato-Bold-webfont.eot');
+  src: url('../fonts/Lato-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Lato-Bold-webfont.woff2') format('woff2'), url('../fonts/Lato-Bold-webfont.woff') format('woff'), url('../fonts/Lato-Bold-webfont.ttf') format('truetype'), url('../fonts/Lato-Bold-webfont.svg#latobold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Helvetica Neue', Helvetica, 'Microsoft Yahei', 微软雅黑, 'Hiragino Sans GB', 冬青黑体, 'WenQuanYi Micro Hei', 文泉驿微米黑, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.center-content {
+  display: table;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.intro {
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: #2a2e39;
+  position: fixed;
+  z-index: 10;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transition: transform 0.6s;
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.intro-image {
+  background-color: rgba(0,0,0,0.7);
+  position: absolute;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 120%;
+  width: auto;
+  height: auto;
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.6s, opacity 0.6s;
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.intro-content {
+  display: table-cell;
+  font-size: 1.15em;
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  min-height: 100%;
+  vertical-align: middle;
+}
+
+.logo {
+  width: 100%;
+  margin: -30px 0 25px;
+}
+
+.text-logo {
+  color: #fff;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.intro-title {
+  font-family: latobold;
+  font-size: 3em;
+  font-weight: normal;
+  margin: 15px 0;
+  text-transform: uppercase;
+}
+
+.countdown {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+  display: block;
+  text-align: center;
+  font-family: BeonMedium;
+}
+.countdown li {
+  display: inline-block;
+}
+.countdown li span {
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 80px;
+}
+.countdown li.seperator {
+  font-size: 14px;
+  margin-top: 12px;
+  line-height: 30px;
+  vertical-align: top;
+}
+.countdown li p {
+  color: #ddd;
+  font-size: 24px;
+}
+a {
+  color: #76949F;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.content-div { width: 100% }
+
+.intro-subtitle {
+  display: block;
+  text-align: center;
+}
+.intro-subtitle p {
+  font-size: 24px;
+  color: #fff;
+}
+.intro-subtitle p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 480px) { 
+  .intro {
+    position: absolute;
+  }
+  .logo {
+    margin: -55px 0 25px;
+  }
+  .text-logo {
+    font-size: 2em;
+    margin: 0;
+  }
+  .intro-title {
+    font-size: 1.5em;
+    margin: 8px 0;
+  }
+  .fa-clock-spin {
+    font-size: 1.5em !important;
+  }
+  .countdown { margin: -18px 0 0 }
+  .countdown li span { font-size: 3em }
+  .countdown li p { margin: -15px 0 5px }
+  .countdown li.seperator {
+    font-size: 9px;
+    line-height: normal;
+    margin-top: 28px;
+    vertical-align: top;
+  }
+}
+@media only screen and (max-width: 304px) { 
+  .intro { position: absolute }
+  .container-open .notify-after {
+    bottom: 60px;
+    left: 5%;
+  }
+}
+@media only screen and (max-width: 320px) { 
+  .intro { position: absolute }
+  .text-logo {
+    font-size: 3em;
+    margin: 0;
+  }
+  .intro-title {
+    font-size: 1.3em;
+    margin: 5px 0 10px;
+  }
+  .fa-clock-spin {
+    font-size: 2em !important;
+  }
+  .countdown {
+    margin: -10px 0 10px;
+  }
+  .countdown li span {
+    font-size: 3em;
+  }
+  .countdown li p {
+    margin: -15px 0 5px;
+  }
+  .countdown li.seperator {
+    font-size: 9px;
+    line-height: normal;
+    margin-top: 28px;
+    vertical-align: top;
+  }
+}
+@media only screen and (min-width: 238px) and (max-width: 319px) { 
+  .intro {
+    position: absolute;
+  }
+  .logo {
+    margin: -60px 0 25px;
+  }
+  .text-logo {
+    margin: -60px 0 0;
+  }
+  .intro-title {
+    font-size: 1em;
+    margin: -25px 0 5px;
+  }
+  .fa-clock-spin {
+    font-size: 2em !important;
+  }
+  .countdown {
+    margin: 10px 0;
+  }
+  .countdown li {
+    margin: -25px 0 0;
+  }
+  .countdown li span {
+    font-size: 1.5em;
+  }
+  .countdown li p {
+    font-size: 12px;
+    margin: -25px 0 0;
+  }
+  .countdown li.seperator {
+    font-size: 8px;
+    line-height: 12px;
+    margin-top: 0;
+  }
+  .countdown li {
+    margin: -30px 0 0px;
+  }
+  .intro-subtitle {
+    margin: -5px 0 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width:991px) { 
+  .intro-title {
+    font-size: 3em;
+  }
+}
+
+/* 
+* ==========================================================================
+    Screen Loader
+* ========================================================================== 
+*/
+.screen-loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  background: #fff url(../images/Preloader.gif) no-repeat center center;
+  z-index: 10000;
+}
+/* 
+* ==========================================================================
+    Preloader
+* ========================================================================== 
+*/
+#preload {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  background: #000;
+  display: none;
+  z-index: 10000;
+}
+#preload-status {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background: #fff url(../images/Preloader.gif) no-repeat center center;
+  opacity: 1;
+}
+/* preload content */
+.preload-content {
+  position: fixed;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.6;
+}
